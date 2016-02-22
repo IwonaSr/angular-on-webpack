@@ -31,3 +31,24 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+#Nitrous files
+.bash_logout
+.bashrc
+.cache/ctrlp/mru/cache.txt
+.gitconfig
+.heroku/
+.hushlogin
+.oh-my-zsh/
+.profile
+.ssh/id_rsa
+.ssh/id_rsa.pub
+.ssh/known_hosts
+.tmux.conf
+.vim/
+.viminfo
+.vimrc
+.zcompdump
+.zcompdump-frontenddevtest-160946-5.0.2
+.zsh_history
+.zshrc

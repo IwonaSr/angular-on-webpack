@@ -1,6 +1,16 @@
 import angular from  'angular';
-require('./test.scss');
+import uirouter from 'angular-ui-router';
+import routing from './config';
 
-var ngModule = angular.module('app', []);
+import home from './features/home'
+
+import './test.scss';
+
+const ngModule = angular.module('app', [
+  uirouter,
+  home
+]);
+
+ngModule.config(routing);
 
 console.log(ngModule);

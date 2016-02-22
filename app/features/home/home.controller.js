@@ -4,6 +4,6 @@ export default class HomeController {
   }
 
   endWord() {
-    this.name = 'Beautiful Word is end';
+    this.name = 'Beautiful World is end';
   }
 }

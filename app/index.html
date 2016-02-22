@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <base href="/">
   <meta charset="UTF-8">
   <title>Angular with Webpack</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -15,12 +14,13 @@
   </nav>
   <div class="container">
      <ul class="nav nav-tabs">
+      <li><a ui-sref="home">Home</a></li>
       <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          Dropdown <span class="caret"></span>
+          Menu <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#"> Test </a></li>
+          <li><a ui-sref="videoListing">VideoRecords</a></li>
         </ul>
     </ul>
     <ui-view></ui-view>

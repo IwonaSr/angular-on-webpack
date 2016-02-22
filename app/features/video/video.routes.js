@@ -4,6 +4,6 @@ export default function routes($stateProvider) {
       url: '/videos',
       template: require('./videoListing.html'),
       controller: 'VideoListingController',
-      controllerAs: 'video'
+      controllerAs: 'videoListing'
     });
 }

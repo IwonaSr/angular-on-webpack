@@ -1,0 +1,16 @@
+.video-listing {
+  &__headline {
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  &__media {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+  
+  &__image {
+    width: 150px;
+    height: 100px;
+  }
+}

@@ -1,5 +1,6 @@
 export default class VideosListingController {
   constructor(VideoService) {
-    this.videos = VideoService.getVideos();
+    this.videoService = VideoService;
+    this.videos = this.videoService.getVideos();
   }
 }

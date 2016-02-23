@@ -1,13 +1,23 @@
 export default class VideoService {
-  constructor() {
+  constructor($localStorage) {
+    this.storage = $localStorage;
+    this.videos = this.storage.videos || [];
+  }
+
+  getNewId() {
+    let id = 1;
+    if (this.videos.length > 0)
+      id = this.videos[this.videos.length - 1].id + 1;
+    return  id;
   }
 
   getVideos() {
-    let videos = [
-      {title: 'Terminator 3', thumbUrl: 'http://lorempixel.com/150/100/', snapUrl: 'http://lorempixel.com/500/300/', description: 'lorem padolem Olem'},
-      {title: 'Terminator 2', thumbUrl: 'http://lorempixel.com/150/100/', snapUrl: 'http://lorempixel.com/500/300/', description: 'lorem padolem Olem'},
-      {title: 'Terminator 1', thumbUrl: 'http://lorempixel.com/150/100/', snapUrl: 'http://lorempixel.com/500/300/', description: 'lorem padolem Olem'}
-    ]
-    return videos;
+    return this.videos;
+  }
+
+  addVideo(newVideo) {
+    newVideo.id = this.getNewId();
+    this.videos.push(newVideo);
+    this.storage.videos = this.videos;
   }
 }

@@ -1,16 +1,17 @@
 <div class="col-sm-12 video-listing">
-  <h1 class="video-listing__headline"> Video Records Information </h1>
+  <h1 class="standard-headline"> Video Records Information </h1>
 
-  <div class="media video-listing__media" ng-repeat="video in videoListing.videos">
+
+  <div class="media video-listing__media" ng-repeat="video in videoListingController.videos">
     <div class="media-left media-middle">
       <a href="#">
-        <img class="media-object video-listin__image" ng-src="{{video.thumbUrl}}">
+        <img class="media-object video-listing__image" ng-src="{{video.thumbUrl}}">
       </a>
     </div>
     <div class="media-body">
-      <h4 class="media-heading">{{video.title}}</h4>
+      <h4 class="media-heading">{{video.id}}. {{video.title}}</h4>
       <p>{{video.description}}</p>
     </div>
   </div>
-  
+
 </div>

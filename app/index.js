@@ -1,6 +1,8 @@
 import angular from  'angular';
 import uirouter from 'angular-ui-router';
-import routing from './config';
+import { routing } from './config';
+
+import './common/stylesheets/index.scss'
 
 if (ON_TEST) {
   require('angular-mocks/angular-mocks');
@@ -15,4 +17,5 @@ const ngModule = angular.module('app', [
   video
 ]);
 
-ngModule.config(routing);
+ngModule
+  .config(routing);

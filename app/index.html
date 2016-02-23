@@ -16,12 +16,14 @@
      <ul class="nav nav-tabs">
       <li><a ui-sref="home">Home</a></li>
       <li role="presentation" class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Menu <span class="caret"></span>
         </a>
         <ul class="dropdown-menu">
-          <li><a ui-sref="videoListing">VideoRecords</a></li>
+          <li><a ui-sref="videoListing">Listing</a></li>
+          <li><a ui-sref="videoNew">Add</a></li>
         </ul>
+       </li>
     </ul>
     <ui-view></ui-view>
   </div>

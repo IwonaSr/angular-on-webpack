@@ -2,9 +2,10 @@ import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
 import routing from './video.routes';
-import VideoListingController from './videoListing.controller';
-import './videoListing.scss'
 import VideoService from './video.service';
+
+import VideoListingController from './videoListing/videoListing.controller';
+import './videoListing/videoListing.scss'
 
 export default angular.module('app.video', [uirouter])
   .config(routing)

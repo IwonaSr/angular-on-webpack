@@ -8,4 +8,9 @@
     width: 150px;
     height: 100px;
   }
+
+  &__description {
+    display: block;
+    min-height: 44px;
+  }
 }

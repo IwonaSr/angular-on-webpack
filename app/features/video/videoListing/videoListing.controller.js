@@ -3,4 +3,8 @@ export default class VideosListingController {
     this.videoService = VideoService;
     this.videos = this.videoService.getVideos();
   }
+
+  deleteVideo(video){
+    this.videoService.deleteVideo(video);
+  }
 }

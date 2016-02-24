@@ -10,7 +10,15 @@
     </div>
     <div class="media-body">
       <h4 class="media-heading">{{video.id}}. {{video.title}}</h4>
-      <p>{{video.description}}</p>
+      <p class="video-listing__description">{{video.description}}</p>
+      <div class="btn-group pull-right btn-group-xs" role="group" aria-label="...">
+        <button type="button" class="btn btn-danger" ng-click="videoListingController.deleteVideo(video)">
+          Delete
+        </button>
+        <button type="button" class="btn btn-info" ui-sref="videoEdit({id: video.id})">
+          Edit / Show
+        </button>
+      </div>
     </div>
   </div>
 

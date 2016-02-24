@@ -6,10 +6,17 @@ export default function routes($stateProvider) {
       controller: 'VideoListingController',
       controllerAs: 'videoListingController'
     })
+    
     .state('videoNew', {
       url: '/videos/new',
       template: require('./videoNew/videoNew.html'),
       controller: 'VideoNewController',
       controllerAs: 'videoNewController'
+
+    }).state('videoEdit', {
+      url: '/videos/:id',
+      template: require('./videoEdit/videoEdit.html'),
+      controller: 'VideoEditController',
+      controllerAs: 'videoEditController'
     });
 }

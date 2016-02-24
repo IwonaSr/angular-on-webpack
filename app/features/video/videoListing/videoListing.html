@@ -2,7 +2,7 @@
   <h1 class="standard-headline"> Video Records Information </h1>
 
 
-  <div class="media video-listing__media" ng-repeat="video in videoListingController.videos">
+  <div class="media video-listing__media" dir-paginate="video in videoListingController.videos | itemsPerPage: 2">
     <div class="media-left media-middle">
       <a href="#">
         <img class="media-object video-listing__image" ng-src="{{video.thumbUrl}}">
@@ -12,6 +12,10 @@
       <h4 class="media-heading">{{video.id}}. {{video.title}}</h4>
       <p>{{video.description}}</p>
     </div>
+  </div>
+
+  <div class="paginator">
+    <dir-pagination-controls></dir-pagination-controls>
   </div>
 
 </div>

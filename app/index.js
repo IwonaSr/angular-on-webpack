@@ -4,10 +4,6 @@ import { routing } from './config';
 
 import './common/stylesheets/index.scss'
 
-if (ON_TEST) {
-  require('angular-mocks/angular-mocks');
-}
-
 import home from './features/home'
 import video from './features/video'
 

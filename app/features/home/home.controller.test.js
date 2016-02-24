@@ -1,17 +1,17 @@
 import home from './index';
 
-describe('Controller: Home', function() {
+describe('Controller: Home', () => {
 
   beforeEach(window.module(home));
 
   var $controller;
 
-  beforeEach(window.inject(function(_$controller_) {
+  beforeEach(window.inject((_$controller_) => {
     $controller = _$controller_;
   }));
 
 
-  it('name is initialized to Beautiful World', function() {
+  it('name is initialized to Beautiful World', () => {
     let ctrl = $controller('HomeController');
     expect(ctrl.name).toBe('Beautiful World');
   });

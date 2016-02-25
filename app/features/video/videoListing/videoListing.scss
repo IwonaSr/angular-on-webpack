@@ -1,4 +1,6 @@
 .video-listing {
+  position: static;
+
   &__media {
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
@@ -7,10 +9,41 @@
   &__image {
     width: 150px;
     height: 100px;
+    &--active {
+      cursor: pointer;
+    }
   }
 
   &__description {
     display: block;
     min-height: 44px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  &__snap-image {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__close-snap {
+    color: #fff;
+    display: block;
+    width: 100%;
+    top: 3px;
+    position: absolute;
+    text-align: center;
   }
 }

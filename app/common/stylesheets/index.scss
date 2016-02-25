@@ -1,3 +1,7 @@
 @import 'standardHeadline';
 @import 'wellForm';
 @import 'paginator';
+
+body {
+  min-height: 100%;
+}

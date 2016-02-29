@@ -1,7 +1,9 @@
-# Video Records Manager - front-end dev test
+# Video Records Manager
+This is simple excecise, app for managing video record information. 
+This app is using webpack module bundler. Build with Angular using es2015. App has unit test wrote in Jasmine, using karma runner. For e2e testing app use selenium and protractor.
 
 ### Install
-1. Clone this repo `git clone git@github.com:bslipek/devTest.git`
+1. Clone this rep
 2. Install dependencies `npm install`
 3. Run `npm start`
 4. Application is avaiable on `http://0.0.0.0:8080/`
